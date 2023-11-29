@@ -7,9 +7,9 @@ services:
     container_name: nginx-public
     restart: unless-stopped
     ports:
-      - "10.0.0.50:80:80/tcp"
-      - "10.0.0.50:444:444/tcp"
-      - "10.0.0.50:444:444/udp"
+      - 80:80/tcp"
+      - 444:443/tcp"
+      - 444:443/udp"
     volumes:
       - ./config:/etc/nginx/conf.d
       - ./certs:/etc/nginx/certs

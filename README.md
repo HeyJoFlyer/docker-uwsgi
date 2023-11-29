@@ -10,7 +10,7 @@ To start the uwsgi server:
 ´´´bash
 docker compose up -d
 ´´´
-
+It uses macbre/nginx-http3 as nginx image for http3 server.
 To start nginx you need to ´cd nginx´ and:
 ´´´bash
 docker compose up -d
