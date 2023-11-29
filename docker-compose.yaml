@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  uwsgi:
+    build: .
+    stop_signal: SIGINT
+    volumes:
+      - sockets:/tmp/sockets
+
+volumes:
+  sockets:
