@@ -1,10 +1,11 @@
-from flask import Flask, request, session
-
+from flask import Flask, request, session, send_from_directory
 app = Flask(__name__)
 
+
+    
 @app.route("/", methods = ["GET"])
 def serve():
-    return "Hello"
+    return send_from_directory('static', "cat.jpeg")
 
 def main():
     app.run()
